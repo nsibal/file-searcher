@@ -6,7 +6,7 @@ const getNestedPathNames = require('./get-nested-path-names.js');
 Input: String
 Output: [[String, String]] -> array of sub-arrays with directory and file data
 */
-async function readFiles (dir) {
+module.exports = async function readFiles (dir) {
   let nestedDir = await getNestedPathNames(dir);
   let txtFiles = nestedDir.filter(filterTxtFile);
 	let txtpromises = txtFiles.map(readFile);
