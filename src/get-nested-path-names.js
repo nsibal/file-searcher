@@ -6,9 +6,9 @@ const getPathNames = require('./get-path-names.js');
 Input: String
 Output: [String] -> contains all possible directory names
 */
-async function getNestedPathNames (dir) {
+module.exports = async function getNestedPathNames (dir) {
   let dirNames = await getPathNames(dir);
-  
+
 	if (dirNames.length === 0) return [];
 
 	let nestedPathPromises = dirNames.map(dir => getNestedPathNames(dir));
