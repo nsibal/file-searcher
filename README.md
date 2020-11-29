@@ -14,7 +14,7 @@ Search files for string tokens in JavaScript.
     1. [Get path names](#1-get-path-names)
     2. [Get nested path names](#2-get-nested-path-names)
     3. [Read files](#3-read-files)
-    4. [Final step to search](#4-file-step-to-search)
+    4. [Final step to search](#4-final-step-to-search)
 
 
 ## Background
